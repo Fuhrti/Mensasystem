@@ -79,7 +79,7 @@ class Home implements IModule
         $freitag = $date->add(new DateInterval("P1D"))->format("Y-m-d 00:00:00");
         $samstag = $date->add(new DateInterval("P1D"))->format("Y-m-d 00:00:00");
         $sonntag = $date->add(new DateInterval("P1D"))->format("Y-m-d 00:00:00");
-        $wochentage = array($montag, $dienstag, $mittwoch, $donnerstag, $freitag, $samstag, $sonntag);
+        $wochentage = array($montag, $dienstag, $mittwoch, $donnerstag, $freitag);//, $samstag, $sonntag);
 
         $db = new Connection();
         $sql = "SELECT
