@@ -40,7 +40,7 @@ class CatererKunden implements IModule
      * @return string|void HTML Table
      */
     public static function createKundenTable(){
-        $sql = "SELECT id, login, vorname, nachname, kontostand FROM mensasystem.tbl_user WHERE rolle = 2 AND active = 1;";
+        $sql = "SELECT id, login, vorname, nachname, kontostand FROM tbl_user WHERE rolle = 2 AND active = 1;";
         $db = new Connection();
         $result = $db->Query($sql);
 
