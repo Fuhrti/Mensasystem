@@ -48,7 +48,7 @@ class KundenBestellen implements IModule
 
         if ($result == null) {
             $output = "<div class=\"col-md-12\">
-                            <p>In der <a href='?page=speiseplan&subpage=artikel'>Artikelverwaltung</a> können Sie dauerhafte Angebote festlegen!</p>
+                            <p>Noch keine dauerhaften Angebote festgelegt!</p>
                         </div>";
             return $output;
         }
