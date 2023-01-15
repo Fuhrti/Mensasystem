@@ -121,7 +121,7 @@ class KundenBestellen implements IModule
 
 
 
-        if (count($result) <= 0) {
+        if ($result == null) {
             return "<tr><td colspan='9' style='text-align: center;'>Noch kein Essen angelegt!</td></tr>";
         }
         // TODO: 24h regeln für das buchen/rückbuchen

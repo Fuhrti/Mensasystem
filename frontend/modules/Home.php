@@ -96,7 +96,8 @@ class Home implements IModule
                 WHERE
                     `timestamp` BETWEEN '$montag' AND '$sonntag'";
         $result = $db->Query($sql);
-        if (count($result) <= 0) {
+		
+        if ($result == null) {
             return "<tr><td colspan='9' style='text-align: center;'>Noch kein Essen angelegt!</td></tr>";
         }
 
