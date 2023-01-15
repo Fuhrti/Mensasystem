@@ -29,6 +29,10 @@ class CatererSpeiseplanArtikel implements IModule
         $db = new Connection();
         $artikel = $db->Query("SELECT * FROM `tbl_artikel` WHERE `active`=1");
 
+		if($artikel == null){
+            return;
+        }
+
         $output = "";
         foreach ($artikel as $Artikel) {
 
